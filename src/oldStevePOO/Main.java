@@ -26,43 +26,13 @@ public class Main {
         Picareta diamante = fabricador.fabricar(new Diamante());
         Picareta netherite = fabricador.fabricar(new Netherite());
 
+        Picareta[] picaretas = {madeira, pedra, ferro, ouro, diamante, netherite};
+
         System.out.println("=== PICARETAS FABRICADAS ===");
 
-        System.out.println(
-                madeira.getNome()
-                        + " | Durabilidade: " + madeira.getDurabilidade()
-                        + " | Força: " + madeira.getForca()
-        );
-
-        System.out.println(
-                pedra.getNome()
-                        + " | Durabilidade: " + pedra.getDurabilidade()
-                        + " | Força: " + pedra.getForca()
-        );
-
-        System.out.println(
-                ferro.getNome()
-                        + " | Durabilidade: " + ferro.getDurabilidade()
-                        + " | Força: " + ferro.getForca()
-        );
-
-        System.out.println(
-                ouro.getNome()
-                        + " | Durabilidade: " + ouro.getDurabilidade()
-                        + " | Força: " + ouro.getForca()
-        );
-
-        System.out.println(
-                diamante.getNome()
-                        + " | Durabilidade: " + diamante.getDurabilidade()
-                        + " | Força: " + diamante.getForca()
-        );
-
-        System.out.println(
-                netherite.getNome()
-                        + " | Durabilidade: " + netherite.getDurabilidade()
-                        + " | Força: " + netherite.getForca()
-        );
+        for (Picareta p : picaretas) {
+            System.out.println(p.getNome() + " | Durabilidade: " + p.getDurabilidade() + " | Força: " + p.getForca());
+        }
 
         System.out.println("\n=== MINERANDO ===");
 

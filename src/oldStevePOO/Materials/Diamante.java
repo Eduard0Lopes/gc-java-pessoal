@@ -7,6 +7,7 @@ public class Diamante implements Material {
     public String getNome() {
         return "Diamante";
     }
+    @Override
     public int getDurabilidade() {
         return 150;
     }

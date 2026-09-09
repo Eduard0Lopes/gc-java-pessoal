@@ -5,8 +5,9 @@ import oldStevePOO.Interfaces.Material;
 public class Ferro implements Material {
     @Override
     public String getNome() {
-        return "ferro";
+        return "Ferro";
     }
+    @Override
     public int getDurabilidade() {
         return 100;
     }

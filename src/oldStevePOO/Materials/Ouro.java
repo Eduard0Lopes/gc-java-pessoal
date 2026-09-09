@@ -8,10 +8,10 @@ public class Ouro implements Material {
     public String getNome() {
         return "Ouro";
     }
+    @Override
     public int getDurabilidade() {
         return 30;
     }
-
     @Override
     public int getForca() {
         return 10;

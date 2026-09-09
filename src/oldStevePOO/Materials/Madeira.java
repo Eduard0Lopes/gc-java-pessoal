@@ -7,6 +7,7 @@ public class Madeira implements Material {
     public String getNome() {
         return "Madeira";
     }
+    @Override
     public int getDurabilidade() {
         return 50;
     }
