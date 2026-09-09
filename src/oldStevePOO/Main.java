@@ -1,9 +1,9 @@
 package oldStevePOO;
 
 import oldStevePOO.FabricaDePicareta.FabricaDePicareta;
-import oldStevePOO.Interfaces.Fabricador;
-import oldStevePOO.Interfaces.Minerador;
-import oldStevePOO.Itens.Picareta;
+import oldStevePOO.FabricaDePicareta.Fabricador;
+import oldStevePOO.MineradorDeBlocos.Minerador;
+import oldStevePOO.Ferramenta.Picareta;
 import oldStevePOO.Materials.Diamante;
 import oldStevePOO.Materials.Ferro;
 import oldStevePOO.Materials.Madeira;
@@ -36,24 +36,24 @@ public class Main {
 
         System.out.println("\n=== MINERANDO ===");
 
-        int minerados = minerador.minerar(ferro, 50);
+        int minerados = minerador.minerar(netherite, 200);
 
         System.out.println("Blocos minerados: " + minerados);
-        System.out.println("Durabilidade: " + ferro.getDurabilidade());
-        System.out.println("Está quebrada? " + ferro.estaQuebrada());
+        System.out.println("Durabilidade: " + netherite.getDurabilidade());
+        System.out.println("Está quebrada? " + netherite.estaQuebrada());
 
         System.out.println("\n=== TENTANDO REPARAR ===");
 
-        String resultadoReparo = ferro.reparar(5);
+        String resultadoReparo = netherite.reparar(0);
 
         System.out.println(resultadoReparo);
 
         System.out.println("\n=== ESTADO FINAL ===");
 
         System.out.println(
-                ferro.getNome()
-                        + " | Durabilidade: " + ferro.getDurabilidade()
-                        + " | Quebrada: " + ferro.estaQuebrada()
+                netherite.getNome()
+                        + " | Durabilidade: " + netherite.getDurabilidade()
+                        + " | Quebrada: " + netherite.estaQuebrada()
         );
     }
 }

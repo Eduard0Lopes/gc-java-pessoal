@@ -1,7 +1,5 @@
 package oldStevePOO.Materials;
 
-import oldStevePOO.Interfaces.Material;
-
 public class Ouro implements Material {
 
     @Override

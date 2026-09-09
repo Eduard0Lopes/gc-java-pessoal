@@ -1,7 +1,6 @@
 package oldStevePOO.MineradorDeBlocos;
 
-import oldStevePOO.Interfaces.Ferramenta;
-import oldStevePOO.Interfaces.Minerador;
+import oldStevePOO.Ferramenta.Ferramenta;
 
 public class MineradorDeBlocos implements Minerador {
 

@@ -1,7 +1,6 @@
-package oldStevePOO.Itens;
+package oldStevePOO.Ferramenta;
 
-import oldStevePOO.Interfaces.Ferramenta;
-import oldStevePOO.Interfaces.Material;
+import oldStevePOO.Materials.Material;
 
 public class Picareta implements Ferramenta {
 
@@ -25,10 +24,10 @@ public class Picareta implements Ferramenta {
         return material.getForca();
     }
 
-    public int usar() {
+    public void usar() {
 
         if (estaQuebrada()) {
-            return 0;
+            return;
         }
 
         durabilidade--;
@@ -36,8 +35,6 @@ public class Picareta implements Ferramenta {
         if (estaQuebrada()) {
             System.out.println("A " + getNome() + " quebrou!");
         }
-
-        return durabilidade;
     }
 
     public String reparar(int quantidade) {

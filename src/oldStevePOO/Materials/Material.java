@@ -1,4 +1,4 @@
-package oldStevePOO.Interfaces;
+package oldStevePOO.Materials;
 
 public interface Material {
     String getNome();

@@ -1,8 +1,7 @@
 package oldStevePOO.FabricaDePicareta;
 
-import oldStevePOO.Interfaces.Fabricador;
-import oldStevePOO.Itens.Picareta;
-import oldStevePOO.Interfaces.Material;
+import oldStevePOO.Ferramenta.Picareta;
+import oldStevePOO.Materials.Material;
 
 public class FabricaDePicareta implements Fabricador {
     public Picareta fabricar(Material material) {
