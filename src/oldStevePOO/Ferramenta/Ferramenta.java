@@ -6,7 +6,6 @@ public interface Ferramenta {
     int getForca();
     void usar();
     String reparar(int quantidade);
-
     boolean estaQuebrada();
 }
 
